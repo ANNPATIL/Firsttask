@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Candidate from './Landpage/Candidate'
+import HR from './Landpage/HRpage'
+import Manager from './Landpage/Managerpage'
+import { Grid } from '@material-ui/core';
+import { palette } from '@mui/system';
+import Box from '@mui/material/Box';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+ export default function App() {
+ return(
+   <Grid container>
+    <div>
+     <Grid item xs={15} sm={6} md={3}>
+     <Candidate/>
+     </Grid>
+     </div>
+     <div>
+     <Grid item xs={12} sm={6} md={3}>
+     <HR/>
+     </Grid>
+     </div>
+     <div>
+     <Grid item xs={12} sm={6} md={3}>
+     <Manager/>
+     </Grid>
+     </div>
+     <div className="application">
+          <style>{'body { background-color: #80ced6; }'}</style>
+        </div>
+    
+   </Grid>
+  
+   )
+ 
+ }
