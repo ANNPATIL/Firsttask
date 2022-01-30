@@ -6,19 +6,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import images from '../images/Manager.jpeg';
+import "../App.css";
 
-
-export default function MediaCard() {
+export default function MediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 1000, height:300, }}>
+    <Card sx={{display: "flex",
+    flexDirection: "column",
+    padding: "10px", margin: "10px" }}>
       <CardMedia src={images}
       title="candidate"
         component="img"
-        
+        sx={{maxWidth:"200px", maxHeight:"250px", minWidth:"200px", minHeight:"250px"}}
       />
       
       
-      <Button variant="contained" Manager Login>
+      <Button variant="contained" onClick={
+        ev => {ev.preventDefault(); props.navigateTo("manager") }}>
       Manager Login
     </Button>
     </Card>

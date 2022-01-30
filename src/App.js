@@ -1,35 +1,28 @@
-import './App.css';
-import Candidate from './Landpage/Candidate'
-import HR from './Landpage/HRpage'
-import Manager from './Landpage/Managerpage'
-import { Grid } from '@material-ui/core';
-import { palette } from '@mui/system';
-import Box from '@mui/material/Box';
+import {BrowserRouter , Routes, Route} from 'react-router-dom';
+import Home from './Landpage/Home';
+import HRView from './Landpage/HrView';
+import ManagerView from './Landpage/ManagerView';
+import Candidate from './Landpage/Candidate';
 
- export default function App() {
- return(
-   <Grid container>
-    <div>
-     <Grid item xs={15} sm={6} md={3}>
-     <Candidate/>
-     </Grid>
-     </div>
-     <div>
-     <Grid item xs={12} sm={6} md={3}>
-     <HR/>
-     </Grid>
-     </div>
-     <div>
-     <Grid item xs={12} sm={6} md={3}>
-     <Manager/>
-     </Grid>
-     </div>
-     <div className="application">
-          <style>{'body { background-color: #80ced6; }'}</style>
-        </div>
-    
-   </Grid>
-  
-   )
- 
+export default function App () {
+
+    return(
+        <BrowserRouter>
+            <Routes>
+              <Route path="/manager" element={<ManagerView />}  />    
+              <Route path="/hr"element={<HRView />}  />  
+              <Route path="/candidate" element={<Candidate />} />
+              <Route path="/" element={<Home />} /> 
+              <Route
+                path="*"
+                element={
+                  <main style={{ padding: "1rem" }}>
+                    <p>There's nothing here!</p>
+                  </main>
+                }
+              />
+            </Routes>      
+        </BrowserRouter> 
+      )
  }
+

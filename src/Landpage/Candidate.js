@@ -1,24 +1,12 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import images from '../images/Candidate.jpg';
-import Grid from '@material-ui/core/Grid';
+import React, {Component} from 'react'
 
-export default function MediaCard() {
-  return (
-    <Card sx={{ maxWidth:1000, height:300, alignItems:'center', justify:'center', borderRadius: 2}}>
-      <CardMedia src={images}
-       title="candidate"
-        component="img"
-      />
-      <Button variant="contained" Candidate Login>
-      Candidate Login
-    </Button>
-    </Card>
-  );
-  
+class Candidate extends Component {
+
+    render(){
+        return (<div> Candidate </div>)
+    }
+
 }
+
+
+export default Candidate;
