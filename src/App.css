@@ -55,3 +55,19 @@
   left:0; 
   right:0
 }
+
+.list_box{
+  padding: 10px;
+  border: 1px solid #ededed;
+  margin: 10px;
+  border-radius: 10px;
+  background: #efefef;
+}
+
+.approval_box{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+  padding-top: 10px;
+}

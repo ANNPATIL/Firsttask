@@ -1,12 +1,41 @@
-import React, {Component} from 'react'
+import React from 'react';
+import { CandidateContext } from '../contexts/candidateContext';
+import List from '../components/List';
 
-class ManagerView extends Component {
+export default function ManagerView (props) {
 
-    render(){
-        return (<div> Manager </div>)
+    function showBtnFn(ele){
+        return !(ele.is_manager_approved || ele.is_manager_reject);
+    } 
+
+    function getApprovalStatus(ele){
+        let approvalStatus = '';
+        if(ele.is_manager_approved){
+            approvalStatus = 'approved';
+        }
+        if(ele.is_manager_reject){
+            approvalStatus = 'rejected';
+        }
+        return approvalStatus;
     }
+
+    return (
+        <CandidateContext.Consumer>
+           { (data) => (
+                <List 
+                data={data.filter( ele => ele.is_hr_approved )} 
+                onApprove={props.approveRequest} 
+                onReject={props.rejectRequest} 
+                getApprovalStatus={getApprovalStatus} 
+                showBtnFn={showBtnFn}
+                listType="manager"
+            />
+            ) }
+            
+        </CandidateContext.Consumer>
+    ) 
+ 
 
 }
 
 
-export default ManagerView;

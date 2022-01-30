@@ -1,0 +1,98 @@
+export const candidates = [
+    {   
+        id : 1, 
+        fname : "Jainish", 
+        lname : "Shah", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 23, 
+        exp : 2,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 2, 
+        fname : "First", 
+        lname : "Last", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 27, 
+        exp : 4,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 3,
+        fname : "Annapurna", 
+        lname : "Patil", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 23, 
+        exp : 2,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 4,
+        fname : "Vivek", 
+        lname : "patil", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 27, 
+        exp : 5,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 5,
+        fname : "Vivek", 
+        lname : "Patil 2", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 27, 
+        exp : 5,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 6,
+        fname : "Annapurna", 
+        lname : "Patil 2", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 27, 
+        exp : 5,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 7,
+        fname : "Jainish", 
+        lname : "Shah 2", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 25, 
+        exp : 4,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+    {
+        id : 8,
+        fname : "Dummy", 
+        lname : "User", 
+        is_hr_approved: false, 
+        is_manager_approved: false, 
+        is_hr_reject: false,
+        is_manager_reject:false,
+        age : 40, 
+        exp : 15,
+        link_to_resume : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F624241198327481388%2F&psig=AOvVaw0nQ-SbFzexDHLYzDaJfUE_&ust=1643622984918000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDf2_Oa2fUCFQAAAAAdAAAAABAD'
+    },
+]
