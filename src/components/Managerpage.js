@@ -22,7 +22,7 @@ export default function MediaCard(props) {
       
       <Button variant="contained" onClick={
         ev => {ev.preventDefault(); props.navigateTo("manager") }}>
-      Manager Login
+      Manager 
     </Button>
     </Card>
   );

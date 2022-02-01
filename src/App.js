@@ -28,10 +28,10 @@ export default function App () {
                 <Route path="/candidate" element={<Candidate />} />
                 <Route path="/" element={<Home />} /> 
                 <Route
-                  path="*"
+                  path=""
                   element={
                     <main style={{ padding: "1rem" }}>
-                      <p>There's nothing here!</p>
+                      <p>Candidate Form</p>
                     </main>
                   }
                 />

@@ -8,7 +8,7 @@ function ListItem(props){
                 <p> <b> Name : </b>  {props.listItemData.fname + ' '  + props.listItemData.lname}  </p>
                 <p> <b> Age : </b> {props.listItemData.age} </p>
                 <p> <b> Total Work Ex (in years) : </b> {props.listItemData.exp} </p>
-                <a href={props.listItemData.link_to_resume} download="filename">  Link to Resume  </a>
+                {/* <a href={props.listItemData.link_to_resume} download="filename">  Link to Resume  </a> */}
             </div>
             {props.showBtn ? (
                 <div className="approval_box"> 

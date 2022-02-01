@@ -1,13 +1,12 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import images from '../images/Candidate.jpg';
-import Grid from '@material-ui/core/Grid';
 import "../App.css";
+import Candidate from '../Landpage/Candidate';
+
+
 
 export default function MediaCard(props) {
   return (
@@ -20,8 +19,8 @@ export default function MediaCard(props) {
         component="img"
         sx={{maxWidth:"200px", maxHeight:"250px", minWidth:"200px", minHeight:"250px"}}
       />
-      <Button variant="contained"  onClick={ ev => {ev.preventDefault(); props.navigateTo("candidate") } }>
-      Candidate Login
+      <Button variant="contained" onClick={ ev => {ev.preventDefault(); props.navigateTo("Candidate") } }>
+      Candidate 
     </Button>
     </Card>
   );
