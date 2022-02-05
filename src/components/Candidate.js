@@ -4,9 +4,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import images from '../images/Candidate.jpg';
 import "../App.css";
-import Candidate from '../Landpage/Candidate';
-
-
 
 export default function MediaCard(props) {
   return (
