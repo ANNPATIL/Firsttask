@@ -21,9 +21,7 @@ export default function App () {
                     <main style={{ padding: "1rem" }}>
                       <div>
                       <p>Candidate Form</p>
-                     </div>
-                
-                      
+                     </div>  
                     </main>
                   }
                 />

@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+
 import React, { useState, Fragment } from 'react';
 import { makeStyles } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
@@ -33,28 +33,34 @@ const Form = ({ handleClose }) => {
   const [lName, setLName] = useState('');
   const [experience, setExperience] = useState('');
   const [age, setAge] = useState('');
-  const [status, setStatus] = useState('');
+  
 
   const handleSubmit = e => {
     e.preventDefault();
+    console.log(fName,lName,experience,age);
     axios.post("http://localhost:8080/candidate", {
-      "fname" : fName.fName,
-      "lname" : lName.lName,
-      "age" : age.age,
-      "experience" : experience.experience
+      "fname": e.fName,
+      "lname": e.lName,
+      "age": e.age,
+      "experience": e.experience
+    }).then((response) => {
+      console.log(response);
       
-}
-).then((response) => {
-  console.log(response);
+    })
+      .catch((error) => {
+        console.log(error);
+      })
+      
+      console.log(fName, lName, experience, age,);
+      // handleClose();
+      axios.get('http://localhost:8080/hr')
+      .then((response)=>{
+        console.log(response);
+      }).catch((err)=>{
+        console.log(err);
+      })
+      window.location.href = 'http://localhost:3000/';
 
-})
-  .catch((error) => {
-    console.log(error);
-  })
-
-    console.log(fName, lName, experience, age,);
-    // handleClose();
-    
   };
 
 
@@ -102,4 +108,3 @@ const Form = ({ handleClose }) => {
 };
 
 export default Form;
-
