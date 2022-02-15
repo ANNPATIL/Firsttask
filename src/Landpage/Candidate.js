@@ -23,9 +23,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
-
-
 const Form = ({ handleClose }) => {
   const classes = useStyles();
 
@@ -33,37 +30,25 @@ const Form = ({ handleClose }) => {
   const [lName, setLName] = useState('');
   const [experience, setExperience] = useState('');
   const [age, setAge] = useState('');
-  
+  const [feedback, setFeedback] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(fName,lName,experience,age);
+    console.log(fName,lName,experience,age,feedback);
     axios.post("http://localhost:8080/candidate", {
-      "fname": e.fName,
-      "lname": e.lName,
-      "age": e.age,
-      "experience": e.experience
+      "fname": fName,
+      "lname": lName,
+      "age": age,
+      "experience": experience,
+      "feedback": feedback,
     }).then((response) => {
       console.log(response);
-      
     })
       .catch((error) => {
         console.log(error);
       })
-      
-      console.log(fName, lName, experience, age,);
-      // handleClose();
-      axios.get('http://localhost:8080/hr')
-      .then((response)=>{
-        console.log(response);
-      }).catch((err)=>{
-        console.log(err);
-      })
-      window.location.href = 'http://localhost:3000/';
-
+      //window.location.href = 'http://localhost:3000/';
   };
-
-
 
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
